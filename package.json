@@ -82,6 +82,9 @@
       "last 1 safari version"
     ]
   },
+  "engines": {
+    "node": "16.x"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.4",
     "gulp": "^4.0.2",
