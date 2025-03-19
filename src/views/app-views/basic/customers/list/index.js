@@ -45,7 +45,6 @@ class UserList extends Component {
 
   render() {
     const { users, loading, isEdited, currentUser } = this.state;
-    console.log(users);
 
     if (loading) {
       return <Loading cover="content"/>;
