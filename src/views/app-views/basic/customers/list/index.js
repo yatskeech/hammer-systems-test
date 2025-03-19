@@ -5,7 +5,7 @@ import Loading from 'components/shared-components/Loading';
 import EditUser from './EditUser';
 import UsersService from 'services/UsersService';
 
-export class UserList extends Component {
+class UserList extends Component {
   state = {
     users: [],
     loading: false,
@@ -45,6 +45,7 @@ export class UserList extends Component {
 
   render() {
     const { users, loading, isEdited, currentUser } = this.state;
+    console.log(users);
 
     if (loading) {
       return <Loading cover="content"/>;

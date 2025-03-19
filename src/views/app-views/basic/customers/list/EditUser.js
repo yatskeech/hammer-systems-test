@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Button, Input, Row, Col, message, Drawer } from 'antd';
 
-export class EditUser extends Component {
+class EditUser extends Component {
   formRef = React.createRef();
 
   componentDidUpdate() {

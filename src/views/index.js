@@ -28,10 +28,9 @@ export const Views = (props) => {
   )
 }
 
-const mapStateToProps = ({ theme, auth }) => {
+const mapStateToProps = ({ theme }) => {
   const { locale } =  theme;
-  const { token } = auth;
-  return { locale, token }
+  return { locale }
 };
 
 export default withRouter(connect(mapStateToProps)(Views));
