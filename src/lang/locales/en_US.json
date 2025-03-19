@@ -1,0 +1,30 @@
+{
+	"basic": "Basic",
+
+	"basic.dashboard": "Dashboard",
+	"basic.catalog": "Catalog",
+	"basic.orders": "Orders",
+	"basic.customers": "Customers",
+	"basic.banners": "Banners",
+	"basic.promo-codes": "Promo codes",
+	"basic.offline-points": "Offline points",
+	"basic.staff": "Staff",
+	"basic.mailing": "Mailing",
+
+	"basic.catalog.products": "Products",
+	"basic.catalog.categories": "Categories",
+	"basic.catalog.collections": "Collections",
+	"basic.catalog.combo": "Combo",
+
+	"basic.customers.list": "List of customers",
+	"basic.customers.groups": "Groups of customers",
+
+	"basic.offline-points.addresses": "Addresses",
+	"basic.offline-points.geofences": "Geofences",
+
+	"system": "System",
+
+	"system.settings": "Settings",
+	"system.mobile-app": "Mobile app",
+	"system.logs": "Logs"
+}
