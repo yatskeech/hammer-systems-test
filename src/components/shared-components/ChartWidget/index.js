@@ -34,7 +34,7 @@ const getChartTypeDefaultOption = type => {
 	}
 }
 
-const ChartWidget = ({title, series, width, height, xAxis, customOptions, card, type, extra}) =>  {
+const ChartWidget = ({title, series = [], width = '100%', height = 300, xAxis, customOptions, card = true, type = 'line', extra}) =>  {
 	let options = getChartTypeDefaultOption(type)
 	const isMobile = window.innerWidth < 768 
 	const setLegendOffset = () => {
@@ -113,13 +113,5 @@ ChartWidget.propTypes = {
 	card: PropTypes.bool,
 	type: PropTypes.string
 }
-
-ChartWidget.defaultProps = {
-	series: [],
-	height: 300,
-	width: '100%',
-	card: true,
-	type: 'line'
-};
 
 export default ChartWidget

@@ -1,4 +1,5 @@
 import {
+  EditOutlined,
   DashboardOutlined,
   ShoppingCartOutlined,
   ShoppingOutlined,
@@ -13,6 +14,15 @@ import {
   FileTextOutlined
 } from '@ant-design/icons';
 import { APP_PREFIX_PATH } from 'configs/AppConfig'
+
+const plannerNavTree = [{
+  key: 'planner',
+  path: `${APP_PREFIX_PATH}/planner`,
+  title: 'planner',
+  icon: EditOutlined,
+  breadcrumb: false,
+  submenu: []
+}];
 
 const basicNavTree = [{
   key: 'basic',
@@ -188,6 +198,7 @@ const systemNavTree = [{
 }]
 
 const navigationConfig = [
+  ...plannerNavTree,
   ...basicNavTree,
   ...systemNavTree
 ]

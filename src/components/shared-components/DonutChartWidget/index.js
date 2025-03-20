@@ -13,7 +13,7 @@ const Chart = props => {
 }
 
 const DonutChartWidget = props => {
-	const { series, customOptions, labels, width, height, title, extra } = props
+	const { series = [], customOptions, labels = [], width = '100%', height = 250, title = '', extra } = props
 	let options = defaultOption
 	options.labels = labels
 	options.plotOptions.pie.donut.labels.total.label = title
@@ -39,13 +39,5 @@ DonutChartWidget.propTypes = {
 	title: PropTypes.string,
 	extra: PropTypes.element
 }
-
-DonutChartWidget.defaultProps = {
-	series: [],
-	labels: [],
-	title: '',
-	height: 250,
-	width: '100%'
-};
 
 export default DonutChartWidget

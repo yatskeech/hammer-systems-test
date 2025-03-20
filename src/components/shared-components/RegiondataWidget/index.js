@@ -113,7 +113,7 @@ const renderDataList = data => {
 }
 
 export const RegiondataWidget = props => {
-	const { data, mapSource, mapType, title, content, list } = props
+	const { data = [], mapSource = geoUrl, mapType = 'world', title, content, list } = props
 	const isMobile = !utils.getBreakPoint(useBreakpoint()).includes('lg')
 	return (
 		<Card bodyStyle={{padding: 0}}>
@@ -145,11 +145,5 @@ RegiondataWidget.propTypes = {
 	content: PropTypes.element,
 	list: PropTypes.element
 }
-
-RegiondataWidget.defaultProps = {
-	data: [],
-	mapSource: geoUrl,
-	mapType: 'world'
-};
 
 export default RegiondataWidget

@@ -4,7 +4,7 @@ import Flex from '../Flex'
 import CustomStatistic from '../CustomStatistic'
 
 const DataDisplayWidget = props => {
-	const { size, value, title, icon, color, avatarSize, vertical } = props
+	const { size, value, title, icon, color, avatarSize = 50, vertical = false } = props
 	const customStatisticProps = { size, value, title }
 	return (
 		<Card>
@@ -17,10 +17,5 @@ const DataDisplayWidget = props => {
 		</Card>
 	)
 }
-
-DataDisplayWidget.defaultProps = {
-	avatarSize: 50,
-	vertical: false
-};
 
 export default DataDisplayWidget

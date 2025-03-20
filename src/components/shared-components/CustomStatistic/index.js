@@ -20,7 +20,7 @@ const Value = props => {
 }
 
 export const CustomStatistic = props => {
-	const { size, value, title } = props;
+	const { size = 'md', value, title } = props;
 	return (
 		<div>
 			<Value value={value} size={size}/>
@@ -37,10 +37,5 @@ CustomStatistic.propTypes = {
 		PropTypes.number
 	]),
 }
-
-CustomStatistic.defaultProps = {
-	size: 'md'
-};
-
 
 export default CustomStatistic

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Card, Progress } from 'antd';
 
-export const GoalWidget = ({ title, value, size, subtitle, strokeWidth, extra }) => {
+export const GoalWidget = ({ title, value, size = 150, subtitle, strokeWidth = 4, extra }) => {
 	return (
 		<Card>
 			<div className="text-center">
@@ -30,10 +30,5 @@ GoalWidget.propTypes = {
 		PropTypes.element
 	])
 }
-
-GoalWidget.defaultProps = {
-	strokeWidth: 4,
-	size: 150
-};
 
 export default GoalWidget
